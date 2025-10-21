@@ -1,3 +1,4 @@
+---
 # Bottle-Sorting-System-With-Deep-Learning
 Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, Glass bottle and Aluminnium)
 
@@ -38,6 +39,8 @@ tk-dev libffi-dev wget
 1.จัดโครงสร้างโฟลเดอร์ "ชื่อโฟลเดอร์โมเดล" ประกอบด้วย 1)ไฟล์ Model สกุล tflite 2)predict และ 3)labels.txt
 2.นำโฟลเดอร์โมเดลเข้า Raspberry pi 
 3.แก้โค้ดไฟล์ run0.py
+
+---
 
 
     
