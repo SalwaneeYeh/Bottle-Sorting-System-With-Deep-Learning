@@ -4,7 +4,7 @@ Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, 
 ```
 # Set up Raspberry Pi 
 1.ลง OS ใช้โปรแกรม Raspberry Pi imager --> Select Raspberry Pi Device:Raspberry Pi 5 , Operating System:Raspberry Pi OS (64 bit) , Storage:SD Card
-2.boot raspberry pi ขึ้นจอ --> set Wifi Hostname password 
+2.boot raspberry pi ขึ้นจอ --> Configuration --> set Wifi Hostname password 
 3.ติดตั้ง Python 3.9 และไลบรารี tflite_runtime, pillow, numpy, opencv, serial ใช้คำสั่งดังนี้
   เปิด terminal 
     sudo apt update
