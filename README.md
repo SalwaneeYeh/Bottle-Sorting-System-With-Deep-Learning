@@ -1,16 +1,14 @@
-'''
+
 # Bottle-Sorting-System-With-Deep-Learning
 Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, Glass bottle and Aluminnium)
-
+```
 # Set up Raspberry Pi 
 1.ลง OS ใช้โปรแกรม Raspberry Pi imager --> Select Raspberry Pi Device:Raspberry Pi 5 , Operating System:Raspberry Pi OS (64 bit) , Storage:SD Card
 2.boot raspberry pi ขึ้นจอ --> set Wifi Hostname password 
 3.ติดตั้ง Python 3.9 และไลบรารี tflite_runtime, pillow, numpy, opencv, serial ใช้คำสั่งดังนี้
   เปิด terminal 
     sudo apt update
-    sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev\
-libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev\
-tk-dev libffi-dev wget
+    sudo apt install -y build-essential libssl-dev zlib1g-dev libncurses5-dev libncursesw5-dev libreadline-dev libsqlite3-dev libgdbm-dev libdb5.3-dev libbz2-dev libexpat1-dev liblzma-dev tk-dev libffi-dev wget
     wget https://www.python.org/ftp/python/3.9.18/Python-3.9.18.tgz
     tar -xf Python-3.9.18.tgz
     cd Python-3.9.18
@@ -39,9 +37,3 @@ tk-dev libffi-dev wget
 1.จัดโครงสร้างโฟลเดอร์ "ชื่อโฟลเดอร์โมเดล" ประกอบด้วย 1)ไฟล์ Model สกุล tflite 2)predict และ 3)labels.txt
 2.นำโฟลเดอร์โมเดลเข้า Raspberry pi 
 3.แก้โค้ดไฟล์ run0.py
-'''
-
-
-    
-    
-    
