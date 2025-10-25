@@ -27,6 +27,30 @@ Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, 
 4.ลงโค้ด run0.py บนโปรแกรม Thonny 
 5.ลงโฟล์เดอร์ Model --> model-finaluse โดยประกอบด้วยไฟล์ model-finaluse.tflite, predict, labels
 
+# ขั้นตอนการ set raspberry pi code ให้รัน Auto
+1.เปิด terminal
+2.ใช้คำสั่ง  sudo nano /etc/systemd/system/sorter.service
+3.วางโค้ด
+  [Unit]
+  Description=Run Smart Sorter Automatically
+  After=network.target
+  [Service]
+  ExecStart=/home/project/bottle_env/bin/python /home/project/bottle_env/run.py
+  WorkingDirectory=/home/project/bottle_env
+  Environment="PATH=/home/project/bottle_env/bin/python"
+  Environment="PYTHONUNBUFFERED=1"
+  StandardOutput=inherit
+  StandardError=inherit
+  Restart=always
+  User=project
+  [Install]
+  WantedBy=multi-user.target
+4.บันทึกไฟล์ (Ctrl + O → Enter → Ctrl + X)
+5.ใช้คำสั่ง  sudo systemctl daemon-reload
+          sudo systemctl restart sorter.service
+          sudo systemctl status sorter.service
+เมื่อสำเร็จแล้ว จะขึ้นสถานะเป็น Active: active (running)
+
 # Arduino Atmega 328
 ใช้บอร์ด Arduino 2 ตัวในการควบคุมระบบ 
 บอร์ด (1) สำหรับควบคุมการส่ง-รับค่า,Load Cell,servo,เซ็นเซอร์ก้ามปู --> base_board.ino
