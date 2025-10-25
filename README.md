@@ -27,7 +27,7 @@ Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, 
 4.ลงโค้ด run0.py บนโปรแกรม Thonny 
 5.ลงโฟล์เดอร์ Model --> model-finaluse โดยประกอบด้วยไฟล์ model-finaluse.tflite, predict, labels
 
-# ขั้นตอนการ set raspberry pi code ให้รัน Auto
+# ขั้นตอนการทำ Raspberry Pi autostart code
 1.เปิด terminal
 2.ใช้คำสั่ง  sudo nano /etc/systemd/system/sorter.service
 3.วางโค้ด
