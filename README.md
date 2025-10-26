@@ -25,7 +25,7 @@ Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, 
   pip install opencv-python
   pip install pyserial
 4.ลงโค้ด run.py บนโปรแกรม Thonny 
-5.ลงโฟล์เดอร์ Model --> model-v1.1 โดยประกอบด้วยไฟล์ model-v1.1.tflite, predict, labels
+5.ลงโฟล์เดอร์ Model --> model-v1.1 โดยประกอบด้วยไฟล์ model-v1.1.tflite, predict.py, labels.txt
 
 # ขั้นตอนการทำ Raspberry Pi autostart code
 1.เปิด terminal
@@ -62,9 +62,9 @@ Bottle Sorting Machine Use Deep Learning and Weight to Sorting Bottle (Plastic, 
 เมื่อสำเร็จ จะขึ้นสถานะเป็น Active: active (running)
 
 # กรณีต้องการเปลี่ยน Model 
-1.จัดโครงสร้างโฟลเดอร์ "ชื่อโฟลเดอร์โมเดล" ประกอบด้วย 1)ไฟล์ Model สกุล tflite 2)predict และ 3)labels.txt
+1.จัดโครงสร้างโฟลเดอร์ "ชื่อโฟลเดอร์โมเดล" ประกอบด้วย 1)ไฟล์ Model สกุล tflite 2)predict.py และ 3)labels.txt
 2.นำโฟลเดอร์โมเดลเข้า Raspberry pi 
-3.แก้โค้ดไฟล์ run.py และไฟล์ predict
+3.แก้โค้ดไฟล์ run.py และไฟล์ predict.py
 
 # Arduino Atmega 328
 ใช้บอร์ด Arduino 2 ตัวในการควบคุมระบบ 
