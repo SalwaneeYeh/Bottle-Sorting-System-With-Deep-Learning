@@ -1,0 +1,4 @@
+cans
+glass
+other
+plastic
